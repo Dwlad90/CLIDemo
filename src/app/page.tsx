@@ -1,7 +1,8 @@
 import Image from "next/image";
 import * as stylex from "@stylexjs/stylex";
 import { colors, fonts } from "./tokens.stylex";
-import { coreTokens as $} from '@bmcwebdev/tokens/coreTokens.stylex';
+import { coreTokens as $} from '@bmcwebdev/tokens-double-different/coreTokens.stylex';
+import { layoutTokens as $$} from '@bmcwebdev/tokens-double-different/layoutTokens.stylex';
 
 
 export default function Home() {
@@ -114,7 +115,7 @@ const styles = stylex.create({
   },
   page: {
     display: "grid",
-    gridTemplateRows: "20px 1fr 20px",
+    gridTemplateRows: "auto 20px 1fr 20px",
     alignItems: "center",
     justifyContent: "center",
     minHeight: stylex.firstThatWorks("100svh", "100vh"),
@@ -127,6 +128,7 @@ const styles = stylex.create({
     fontSynthesis: "none",
   },
   main: {
+    "--flex": $$['--x-flex'],
     display: "flex",
     flexDirection: "column",
     gap: 32,

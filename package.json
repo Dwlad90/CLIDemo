@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "stylex --config ./.stylex.json5",
+    "predev": "echo skip",
     "dev": "next dev",
     "prestart": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@bmcwebdev/tokens": "^0.0.1",
+    "@bmcwebdev/tokens-double-different": "^0.0.1",
     "@stylexjs/stylex": "0.7.5",
     "install": "^0.13.0",
     "next": "15.0.0-rc.0",
